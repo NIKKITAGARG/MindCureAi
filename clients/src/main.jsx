@@ -9,8 +9,11 @@ import {
   BrowserRouter,
   RouterProvider,
   createBrowserRouter,
-} from "react-router";
-import PhoneAuth from "./components/PhoneSMS.jsx";
+} from "react-router-dom";
+import MainPage from "./page/MainPage";
+import SPlayground from "./page/SPlayground";
+import PGround from "./page/PGround";
+import DashBoard from "./page/DashBoard";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +21,20 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/main",
-    element: <PhoneAuth/>,
+    path: "/mainpage",
+    element: <MainPage />,
+  },
+  {
+    path: "/SPlayground",
+    element: <SPlayground />,
+  },
+  {
+    path: "/PGround",
+    element: <PGround/>,
+  },
+  {
+    path: "/Doctor",
+    element: <DashBoard/>,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

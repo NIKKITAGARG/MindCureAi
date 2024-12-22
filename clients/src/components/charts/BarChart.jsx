@@ -41,7 +41,7 @@ export function BarChartVert() {
   return (
     <Card className="w-full h-full">
       <CardHeader>
-        <CardTitle>Bar Chart - Multiple</CardTitle>
+        <CardTitle>Bar Chart - Interaction</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>

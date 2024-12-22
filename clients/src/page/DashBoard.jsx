@@ -36,8 +36,13 @@ const DashBoard = ({ children }) => {
         className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className=' flex justify-center h-11'>
-          <h1 className='text-2xl'>Youth<span className='text-green-500'>Care</span></h1>
+        <div className=" flex justify-center h-11">
+          <h1 className="text-2xl">
+            Mind<span className="text-green-500">Care</span>
+            <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text">
+              AI
+            </span>
+          </h1>
         </div>
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul className="space-y-2 font-medium">
@@ -74,7 +79,6 @@ const DashBoard = ({ children }) => {
                   <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                 </svg>
                 <span className="flex-1 ms-3 whitespace-nowrap">Details</span>
-
               </a>
             </li>
             <li>
@@ -178,20 +182,15 @@ const DashBoard = ({ children }) => {
       </aside>
       <div className="p-4 sm:ml-64">
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-
           <div className="flex items-center justify-center h-auto  mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            
-            <LineChartPL/>
-
-            
+            <LineChartPL />
           </div>
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div className="flex items-center justify-center rounded bg-gray-50 h-auto dark:bg-gray-800">
-              <PieChartTemp/>
-
+              <PieChartTemp />
             </div>
             <div className="flex items-center justify-center rounded bg-gray-50 h-full w-full dark:bg-gray-800">
-            <BarChartVert/>
+              <BarChartVert />
             </div>
             <div className="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
               <p className="text-2xl text-gray-400 dark:text-gray-500">

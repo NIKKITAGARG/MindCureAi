@@ -1,11 +1,8 @@
-import React from 'react'
+import { useParams } from "react-router-dom";
 
 const SPlayground = () => {
-  return (
-    <div>
-      Hii Student
-    </div>
-  )
-}
+  const { id } = useParams(); // Access dynamic id
+  return <div>SPlayground with ID: {id}</div>;
+};
 
-export default SPlayground
+export default SPlayground;

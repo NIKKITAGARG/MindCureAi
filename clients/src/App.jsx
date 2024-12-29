@@ -27,8 +27,8 @@ function App() {
     const provider = new GoogleAuthProvider();
     try {
       const result = await signInWithPopup(auth, provider);
-      console.log("User signed in: ", result.user);
-      navigate("/mainpage"); // Redirect to MainPage
+      const userId = result.user.uid; // Get user ID
+      navigate(`/mainpage/${userId}`); // Redirect to a dynamic route
     } catch (error) {
       console.error("Error signing in with Google: ", error);
       setMessage(error.message);
@@ -48,8 +48,8 @@ function App() {
       } else {
         // Sign-in functionality
         await signInWithEmailAndPassword(auth, email, password);
-        setMessage("Logged in successfully!");
-        navigate("/mainpage"); // Redirect to MainPage
+        const userId = auth.currentUser.uid; // Get current user ID
+        navigate(`/mainpage/${userId}`); // Redirect to dynamic route
       }
     } catch (error) {
       setMessage(error.message);
@@ -111,7 +111,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;

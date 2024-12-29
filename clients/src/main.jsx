@@ -1,42 +1,42 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.jsx";
-
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  BrowserRouter,
-  RouterProvider,
-  createBrowserRouter,
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App.jsx";
 import MainPage from "./page/MainPage";
 import SPlayground from "./page/SPlayground";
 import PGround from "./page/PGround";
 import DashBoard from "./page/DashBoard";
+import "./index.css"; // Import global styles
 
+// Define routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App />, // Root component
   },
   {
-    path: "/mainpage",
-    element: <MainPage />,
+    path: "/mainpage/:id",
+    element: <MainPage />, // Main page route
   },
   {
     path: "/SPlayground",
-    element: <SPlayground />,
+    element: <SPlayground />, // SPlayground route
   },
   {
     path: "/PGround",
-    element: <PGround/>,
+    element: <PGround />, // PGround route
   },
   {
     path: "/Doctor",
-    element: <DashBoard/>,
+    element: <DashBoard />, // Doctor dashboard route
+  },
+  {
+    path: "/Doctor/Dashboard",
+    element: <DashBoard />, // Alternative Doctor dashboard route
   },
 ]);
+
+// Render application
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />

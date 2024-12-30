@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     element: <DashBoard />, // Doctor dashboard route
   },
   {
-    path: "/Doctor/Dashboard",
+    path: "/DashBoard",
     element: <DashBoard />, // Alternative Doctor dashboard route
   },
 ]);

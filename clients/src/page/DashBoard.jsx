@@ -204,7 +204,7 @@ const DashBoard = ({ children }) => {
       >
         <div className=" flex justify-center h-11">
           <h1 className="text-2xl">
-            Mind<span className="text-green-500">Care</span>
+            Mind<span className="text-[#00F1FF]">Care</span>
             <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text">
               AI
             </span>

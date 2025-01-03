@@ -1,3 +1,4 @@
+import ConversationSlide from "@/components/ConversationSlide";
 import MentalHealthDashboard from "@/components/MentalHealthDashboard";
 import { useParams } from "react-router-dom";
 
@@ -6,6 +7,7 @@ const SPlayground = () => {
   return(
     <>
     <MentalHealthDashboard/>
+    <ConversationSlide/>
     </>
   );
 };

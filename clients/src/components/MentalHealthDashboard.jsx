@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Line } from "react-chartjs-2";
+import StudentApp from "./StudentBoardComp";
 
 const MentalHealthDashboard = () => {
   const [mood, setMood] = useState("");
@@ -12,6 +13,8 @@ const MentalHealthDashboard = () => {
   };
 
   return (
+    <>
+    <StudentApp/>
     <div className="p-6 bg-gray-50 min-h-screen">
       <h1 className="text-3xl font-bold mb-4">Mental Health Dashboard</h1>
 
@@ -80,6 +83,7 @@ const MentalHealthDashboard = () => {
         ></textarea>
       </div>
     </div>
+    </>
   );
 };
 

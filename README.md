@@ -1,2 +1,3 @@
 # YouthCare
-YouthCare is a mental health platform connecting students, parents, and doctors to promote well-being. It offers tools like assessments, expert consultations, and parental guidance to address student challenges. YouthCare fosters collaboration, early intervention, and personalized care to create a supportive environment for young minds to thrive.
+YouthCare is a mental health platform designed to bridge the gap between students, parents, and mental health professionals. It provides resources such as assessments, expert consultations, and parental support to address challenges faced by students. By fostering collaboration, enabling early intervention, and offering personalized care, YouthCare creates a nurturing environment where young minds can flourish.
+
